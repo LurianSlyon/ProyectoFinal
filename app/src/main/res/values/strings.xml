@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ECF_Luna</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="info">Este programa lista emojis.\n
+                        Se demorara un poco porque son bastantes tenga paciencia.\n
+                        Gracias</string>
+
+    <string name="web_client_id">114661747130705189035</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

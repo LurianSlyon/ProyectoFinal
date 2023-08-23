@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/listFragment"
+        android:title="Lista"
+        android:icon="@drawable/baseline_list"></item>
+    <item android:id="@id/favoriteFragment"
+        android:title="Favorito"
+        android:icon="@drawable/baseline_favorite"></item>
+    <item android:id="@id/listfirebaseFragment"
+        android:title="ListaF"
+        android:icon="@drawable/listf"></item>
+    <item android:id="@id/setingFragment"
+        android:title="Settings"
+        android:icon="@drawable/settings"></item>
+</menu>

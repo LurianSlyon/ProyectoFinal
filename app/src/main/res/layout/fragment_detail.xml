@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lurian.ecf_luna.fragmentos.DetailFragment">
+
+    <androidx.cardview.widget.CardView
+        style="@style/Widget.Material3.CardView.Filled"
+        android:layout_width="362dp"
+
+        android:layout_height="285dp"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:elevation="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:title="Detailles"
+                app:titleTextAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            <TextView
+                android:id="@+id/txt_Name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="16dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar"
+                tools:text="Titulo del texto" />
+
+            <TextView
+                android:id="@+id/txt_category"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="@+id/txt_Name"
+                app:layout_constraintTop_toBottomOf="@+id/txt_Name"
+                tools:text="Categoria" />
+
+            <Button
+                android:id="@+id/btn_add_favorite"
+                style="@style/Widget.Material3.Button.TextButton.Dialog.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Add favorite"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_category"
+                app:layout_constraintEnd_toEndOf="@+id/txt_Name"
+                app:layout_constraintTop_toBottomOf="@+id/txt_Name" />
+
+            <TextView
+                android:id="@+id/txt_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Grupo"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.077"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_category"></TextView>
+
+            <TextView
+                android:id="@+id/txt_htmlCode"
+                android:layout_width="196dp"
+                android:layout_height="24dp"
+                android:layout_marginVertical="12dp"
+                android:layout_marginStart="24dp"
+                android:text="codigo html del emiji"
+
+                android:textSize="16sp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_group"></TextView>
+
+            <TextView
+                android:id="@+id/txt_unicode"
+                android:layout_width="196dp"
+                android:layout_height="22dp"
+                android:layout_marginVertical="12dp"
+                android:layout_marginStart="24dp"
+                android:text="codigo unico"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_htmlCode"></TextView>
+            <TextView
+                android:id="@+id/txt_image"
+                android:layout_width="196dp"
+                android:layout_height="22dp"
+                android:layout_marginVertical="12dp"
+                android:layout_marginStart="24dp"
+                android:text="codigo unico"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_unicode"></TextView>
+
+            <ImageView
+                android:id="@+id/imgenw"
+                android:layout_width="106dp"
+                android:layout_height="116dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.305"
+                app:layout_constraintStart_toEndOf="@+id/txt_unicode"
+                app:layout_constraintTop_toBottomOf="@+id/btn_add_favorite"
+                app:layout_constraintVertical_bias="0.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
