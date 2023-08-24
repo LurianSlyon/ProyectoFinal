@@ -24,7 +24,7 @@ class SetingFragment : Fragment() {
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+//a
         binding.btnLogout.setOnClickListener {
             FirebaseAuth.getInstance().signOut()
             val intent = Intent(requireActivity(), LoginActivity::class.java)
