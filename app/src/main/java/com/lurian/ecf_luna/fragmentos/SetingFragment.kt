@@ -7,7 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.google.firebase.auth.FirebaseAuth
-import com.lurian.ec3_luna.R
+
 
 import com.lurian.ec3_luna.databinding.FragmentSetingBinding
 import com.lurian.ecf_luna.LoginActivity

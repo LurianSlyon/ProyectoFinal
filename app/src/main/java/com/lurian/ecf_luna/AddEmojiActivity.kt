@@ -42,7 +42,7 @@ class AddEmojiActivity : AppCompatActivity() {
         )
         firestore.collection("Emoji").add(newEmoji)
             .addOnSuccessListener {
-                Toast.makeText(this, "Nota agregada con id ${it.id}", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Emoji agregado con id ${it.id}", Toast.LENGTH_SHORT).show()
             }
             .addOnSuccessListener {
                 Toast.makeText(this, "Ocurrio un error", Toast.LENGTH_SHORT).show() }
